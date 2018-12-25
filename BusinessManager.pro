@@ -49,22 +49,22 @@ HEADERS += \
     startupmanager.h \
     guicontroller.h
 
-TARGET = BussinessManager
+TARGET = BusinesssManager
 
 android {
     !defined(LOGGER_PATH, var) {
-        LOGGER_PATH = \\\"/sdcard/BussinessManager.log\\\"
+        LOGGER_PATH = \\\"/sdcard/BusinesssManager.log\\\"
     }
 }
 
 windows {
-    DEFINES += LOGGER_PATH = "D:\\BussinessManager.log"
+    DEFINES += LOGGER_PATH = "D:\\BusinesssManager.log"
 }
 
 linux {
-    DEFINES += LOGGER_PATH=\\\"~/BussinessManager.log\\\" DB_USERNAME=\\\"sendu\\\" DB_PASSWORD=\\\"root_password\\\"
+    DEFINES += LOGGER_PATH=\\\"~/BusinesssManager.log\\\" DB_USERNAME=\\\"sendu\\\" DB_PASSWORD=\\\"root_password\\\"
 }
 
 ios {
-    DEFINES += LOGGER_PATH = "/sdcard/BussinessManager.log"
+    DEFINES += LOGGER_PATH = "/sdcard/BusinesssManager.log"
 }
